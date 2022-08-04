@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "subscriptionId": {
+      "value": "7bf973a3-7028-4680-9dbf-cc1308809088"
+    },
+    "name": {
+      "value": "docclass-8afc0066-a9f2-11ec-bbdd-349971d41f7c"
+    },
+    "location": {
+      "value": "Central US"
+    },
+    "hostingPlanName": {
+      "value": "docclassRegistryhostingplan"
+    },
+    "serverFarmResourceGroup": {
+      "value": "CerberusTestingDE"
+    },
+    "alwaysOn": {
+      "value": false
+    },
+    "sku": {
+      "value": "Free"
+    },
+    "skuCode": {
+      "value": "P3v2"
+    },
+    "workerSize": {
+      "value": "0"
+    },
+    "workerSizeId": {
+      "value": "0"
+    },
+    "numberOfWorkers": {
+      "value": "1"
+    },
+    "linuxFxVersion": {
+      "value": "DOCKER|docclassregistry.azurecr.io/docclass:latest"
+    },
+    "dockerRegistryUrl": {
+      "value": "https://docclassregistry.azurecr.io"
+    },
+    "dockerRegistryUsername": {
+      "value": "docclassRegistry"
+    },
+    "dockerRegistryPassword": {
+      "value": "X/B9L5SCp+Zp02MyS1O7RJNY6eeVNcjd"
+    },
+    "dockerRegistryStartupCommand": {
+      "value": "uvicorn main:app --reload --host 0.0.0.0 --port 80"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+# Layoutlm parameters
+inputs:
+    # Data room root path
+    data_room_root_path: "../demo_documents/"
+    
+storage:
+    # Path to store temporary doc/docx/rtf documents
+    unprocessed_doc_dir: "../data/unprocessed_doc"
+    # Path to store temporary transfromed documents
+    processed_dir: "../data/processed"
+
+layoutlm_model:
+    #Limit encoded sentences to a specified fixed length
+    encoding_limit: 512 
+    # input batch
+    batch_size: 4
+
+# Keybert parameters
+keyword_extraction:
+    # Number of keywords to be extracted from a document
+    top_n_keywords: 10 
+    # Range of lengh of each key phrase
+    keyphrase_ngram_range: (1,1)
+    
+# Kmeans parameters
+kmeans_model:
+    # Fix number of clusters
+    user_define_k: 0
+    # Number of iteratons to construct elbow graph
+    max_tries: 10
+
+multi_process:
+    # number of cpus for multiprocessing
+    num_processor: 6
+
+outputs:
+    # Data room root path
+    json_path: "../results.json"
+
+
+# used when deployed on azure
+connection_strings:
+    - "DefaultEndpointsProtocol=https;AccountName=testdataroomnyx;AccountKey=/8u2zrQOetscREohGsOjc8Nb6voiXUopAicSC7ANLTUcv7MfziNWLjuwwQaD3pAtZ6A37LPXnnUF+ASttlRDQA==;EndpointSuffix=core.windows.net"
+    - "DefaultEndpointsProtocol=https;AccountName=differentaccount;AccountKey=/8u2zrQOetscREohGsOjc8Nb6voiXUopAicSC7ANLTUcv7MfziNWLjuwwQaD3pAtZ6A37LPXnnUF+ASttlRDQA==;EndpointSuffix=core.windows.net"
+    

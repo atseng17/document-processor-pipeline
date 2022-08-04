@@ -1,0 +1,19 @@
+# api dependancies
+fastapi==0.75.0
+uvicorn==0.17.6
+azure-core==1.23.0
+azure-storage-blob==12.10.0
+# model dependancies
+git+https://github.com/huggingface/transformers.git
+pyyaml==5.1
+torch==1.8.0+cu101
+torchvision==0.9.0+cu101
+-f https://download.pytorch.org/whl/torch_stable.html
+datasets==1.18.4
+huggingface-hub==0.2.1
+pytesseract==0.3.9
+pdf2image==1.16.0
+keybert==0.5.0
+spacy==3.2.3
+pytextrank==3.2.3
+opencensus-ext-azure
