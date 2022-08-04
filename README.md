@@ -1,10 +1,5 @@
-# Cerberus Document Clustering
+# General Document Processor
 
-![](imgs/logo.png)
-
-![](https://raster.shields.io/badge/python-v3.6+-blue.png)
-![](https://api.travis-ci.org/anfederico/Clairvoyant.png?branch=master)
-![](https://raster.shields.io/badge/dependencies-up%20to%20date-brightgreen.png)
 
 ## Purpose
 
@@ -61,13 +56,3 @@ Several parameters can be configured in `config/doc_cls_config.yaml.
 ## Output Format
 
 The format of the output `JSON` file includes `document path`, `cluster label`, `cluster description`, and `confidence score` for all documents in a dataroom.
-
-### Contacts
-
-    - Developers
-        - Andrew Tseng (atseng@sflscientific.com)
-        - Tania Kong (tkong@sflscientific.com)
-    - SFL Scientific founders
-        - Mike Luk (mluk@sflscientific.com)
-        - Mike Segala (msegala@sflscientific.com)
-        - Dan Ferrante (danieldf@sflscientific.com)
